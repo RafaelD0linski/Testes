@@ -4,119 +4,122 @@
     <meta charset="UTF-8" />
     <title>Diogo Yuri Grolli • Portfólio QA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="hero-bg">
-        <div class="hero-content">
-            <img src="image.jpeg" class="avatar-hero" alt="Perfil de Diogo">
-            <h1 class="hero-title">Diogo Yuri Grolli</h1>
-            <span class="hero-role">Analista de QA • Estagiário na Informezz • Unidep</span>
-            <span class="hero-location"><img src="https://img.icons8.com/ios-filled/16/92b4fe/marker.png"/> Pato Branco, PR</span>
-            <nav class="hero-menu">
-                <a href="#resumo">Resumo</a>
-                <a href="#competencias">Competências</a>
-                <a href="#projects">Projetos</a>
-                <a href="#career">Trajetória</a>
-                <a href="#contact">Contato</a>
-            </nav>
-        </div>
-    </div>
+    <button class="theme-toggle" id="themeToggle" title="Alternar tema"></button>
     <main>
-        <section id="resumo" class="section bloco-resumo">
-            <h2 class="section-title">Resumo Profissional</h2>
-            <p class="card-resumo">
-                Analista de QA com foco na análise aprofundada de Regras de Negócio (RNs) e na criação de toda a suíte de documentação de testes. Habilidade comprovada em transformar requisitos complexos em artefatos claros e rastreáveis, como Histórias de Usuário, Critérios de Aceite, Tabelas de Decisão e Casos de Teste detalhados. Perfil altamente analítico, detalhista e colaborativo, acostumado a garantir a qualidade desde a concepção do produto.
-            </p>
+        <header class="header wow-fade">
+            <div class="avatar-clip">
+                <img src="image.jpeg" alt="Perfil de Diogo" class="avatar" id="profileImg">
+            </div>
+            <h1 id="profileName" class="hero-title">Diogo Yuri Grolli</h1>
+            <div class="typed-text"><span id="typedRole"></span></div>
+            <span class="location wow-fade-slow" id="profileLocation">
+                <img src="https://img.icons8.com/ios-filled/17/6c7a89/marker.png"/> Pato Branco, PR
+            </span>
+        </header>
+        <nav class="menu wow-fade">
+            <a href="#resumo">Resumo</a>
+            <a href="#competencias">Competências</a>
+            <a href="#projects">Projetos</a>
+            <a href="#career">Trajetória</a>
+            <a href="#contact">Contato</a>
+        </nav>
+        <section class="section bloco-resumo wow-up" id="resumo">
+            <h2>Resumo Profissional</h2>
+            <div class="card card-resumo" id="profileResume">
+                Analista de QA focado em análise aprofundada de RN, documentação robusta e rigor em qualidade. Transformação de requisitos em artefatos claros, rastreáveis e automação de testes ponta-a-ponta. Perfil analítico, detalhista e colaborativo.
+            </div>
         </section>
-        <section id="competencias" class="section bloco-competencias">
-            <h2 class="section-title">Principais Competências</h2>
-            <div class="cards-row compet-row">
-                <div class="card">
-                    <h3>Análise de Requisitos e RNs</h3>
-                    <p>Interpretação, questionamento e validação da lógica de negócio para garantir testes completos.</p>
+        <section class="section bloco-competencias wow-up" id="competencias">
+            <h2>Principais Competências</h2>
+            <div class="card-grid" id="competenciasGrid">
+                <div class="card"><b>Análise de RN</b><div>Validação profunda das regras de negócio.</div></div>
+                <div class="card"><b>User Stories</b><div>Clareza técnica do ponto de vista do usuário.</div></div>
+                <div class="card"><b>Tabelas de Decisão</b><div>Lógica robusta, map. de cenários críticos.</div></div>
+                <div class="card"><b>Casos de Teste</b><div>Detalhamento claro, cobertura total.</div></div>
+                <div class="card"><b>Pensamento Crítico</b><div>Detecção de inconsistências e cenários ocultos.</div></div>
+                <div class="card"><b>Colaboração Ágil</b><div>Refinamento com PO, devs e negócio.</div></div>
+                <div class="card"><b>Ferramentas</b><div>Figma • ERP • GitHub</div></div>
+            </div>
+        </section>
+        <section class="section projects-section wow-up" id="projects">
+            <h2>Projetos Técnicos</h2>
+            <div class="card-grid" id="projectsGrid">
+                <div class="card card-project"><b>RN-0133</b><br>Validação de Duplicidade. Integridade via automação.</div>
+                <div class="card card-project"><b>RN-0106</b><br>Hierarquia de Permissões. Testes de segurança.</div>
+                <div class="card card-project"><b>RN-0111</b><br>Desconto Acumulativo. Automatização de cenários multidimensionais.</div>
+                <div class="card card-project"><b>RN-0092</b><br>Acesso a Convênios. Permissões e segurança contextualizadas.</div>
+                <div class="card card-project"><b>RN-0223</b><br>Não-Retroatividade. Preservação e proteção de dados históricos.</div>
+            </div>
+        </section>
+        <section class="section career-section wow-up" id="career">
+            <h2>Trajetória</h2>
+            <div class="timeline" id="timelineGrid">
+                <div class="timeline-row">
+                    <span class="timeline-date">2024 - Atual</span>
+                    <span class="timeline-job">Estagiário QA - Informezz</span>
                 </div>
-                <div class="card">
-                    <h3>Histórias de Usuário</h3>
-                    <p>Transformação de regras técnicas em valor para o negócio, explorando diferentes personas.</p>
-                </div>
-                <div class="card">
-                    <h3>Tabelas de Decisão</h3>
-                    <p>Mapeamento de regras complexas em cenários claros e lógicos.</p>
-                </div>
-                <div class="card">
-                    <h3>Casos de Teste Detalhados</h3>
-                    <p>CTs completos (pré-condições, passos, esperado), cobrindo sucesso e falha.</p>
-                </div>
-                <div class="card">
-                    <h3>Testes Exploratórios</h3>
-                    <p>Criação de "Cartas de Teste" guiando objetivos claros para testes não roteirizados.</p>
-                </div>
-                <div class="card">
-                    <h3>Pensamento Crítico</h3>
-                    <p>Atenção aos detalhes, identificação de ambiguidades e inconsistências.</p>
-                </div>
-                <div class="card">
-                    <h3>Colaboração Ágil</h3>
-                    <p>Refinamento de requisitos com PO, trabalho em times ágeis.</p>
-                </div>
-                <div class="card">
-                    <h3>Ferramentas</h3>
-                    <p>Análise de interfaces (Figma), familiaridade com ERPs.</p>
+                <div class="timeline-row">
+                    <span class="timeline-date">2023</span>
+                    <span class="timeline-job">Estagiário QA - Projeto Acadêmico</span>
                 </div>
             </div>
         </section>
-        <section id="projects" class="section projects-section">
-            <h2 class="section-title">Projetos Técnicos</h2>
-            <div class="cards-row">
-                <div class="project-card">
-                    <h3>RN-0133</h3>
-                    <p>Validação de Duplicidade, integridade via cenários/tabelas de decisão.</p>
-                </div>
-                <div class="project-card">
-                    <h3>RN-0106</h3>
-                    <p>Hierarquia de Permissões: controle granular, testes de segurança.</p>
-                </div>
-                <div class="project-card">
-                    <h3>RN-0111</h3>
-                    <p>Desconto Acumulativo: integração convênio/promos, múltiplos cenários.</p>
-                </div>
-                <div class="project-card">
-                    <h3>RN-0092</h3>
-                    <p>Acesso a Convênios: permissões cruzadas, segurança por contexto.</p>
-                </div>
-                <div class="project-card">
-                    <h3>RN-0223</h3>
-                    <p>Não-Retroatividade: proteção de históricos e dados íntegros.</p>
-                </div>
+        <section class="section contact-section wow-up" id="contact">
+            <h2>Contato</h2>
+            <div class="contact-links" id="contactLinks">
+                <a href="mailto:diogoyurigrolli@gmail.com"><img src="https://img.icons8.com/ios-filled/20/6c7a89/new-post.png"/> diogoyurigrolli@gmail.com</a>
+                <a href="https://www.linkedin.com/in/diogo-yuri-grolli-1753ab305/" target="_blank"><img src="https://img.icons8.com/ios-filled/20/6c7a89/linkedin-circled.png"/> LinkedIn</a>
             </div>
         </section>
-        <section id="career" class="section career-section">
-            <h2 class="section-title">Trajetória</h2>
-            <div class="career-row">
-                <div>
-                    <span class="career-date">2024 - Atual</span>
-                    <span class="career-job">Estagiário QA - Informezz</span>
-                </div>
-                <div>
-                    <span class="career-date">2023</span>
-                    <span class="career-job">Estagiário QA - Projeto Acadêmico</span>
-                </div>
-            </div>
-        </section>
-        <section id="contact" class="section contact-section">
-            <h2 class="section-title">Contato</h2>
-            <div class="contact-links">
-                <a href="mailto:diogoyurigrolli@gmail.com"><img src="https://img.icons8.com/ios-filled/24/92b4fe/new-post.png"/> diogoyurigrolli@gmail.com</a>
-                <a href="https://www.linkedin.com/in/diogo-yuri-grolli-1753ab305/" target="_blank"><img src="https://img.icons8.com/ios-filled/24/92b4fe/linkedin-circled.png"/> LinkedIn</a>
-            </div>
-        </section>
+        <footer class="footer">
+            <div class="footer-copyright">© 2025 Diogo Yuri Grolli</div>
+        </footer>
     </main>
-    <footer>
-        <div class="footer-copyright">
-            © 2025 Diogo Yuri Grolli
-        </div>
-    </footer>
+    <script>
+    // Tema claro/escuro
+    const themeToggle = document.getElementById('themeToggle');
+    function themeSet() {
+        const isLight = localStorage.getItem('siteTheme') === 'light';
+        if(isLight){ document.body.classList.add('theme-light'); themeToggle.textContent="🌚"; }
+        else { document.body.classList.remove('theme-light'); themeToggle.textContent="🌞"; }
+    }
+    themeToggle.onclick = ()=>{
+        if(document.body.classList.contains('theme-light')){
+            localStorage.setItem('siteTheme','dark');
+        }else{
+            localStorage.setItem('siteTheme','light');
+        }
+        themeSet();
+    };
+    themeSet();
+
+    // Typed text
+    const roles = [ 'Analista de QA • Estagiário na Informezz • Unidep', 'Especialista em testes de qualidade', ];
+    let typedIndex = 0, charI = 0, typingDiv = document.getElementById('typedRole');
+    function typeIt() {
+        if (!typingDiv) return;
+        if (charI < roles[typedIndex].length) {
+            typingDiv.innerHTML += roles[typedIndex][charI++];
+            setTimeout(typeIt, 38);
+        } else {
+            setTimeout(()=> { charI = 0; typedIndex = (typedIndex+1)%roles.length; typingDiv.innerHTML = ''; setTimeout(typeIt, 1200); }, 1700);
+        }
+    }
+    typeIt();
+    // Animações on scroll
+    const wowElements = document.querySelectorAll('.wow-fade, .wow-fade-slow, .wow-up');
+    window.addEventListener('scroll', showWow);
+    function showWow() {
+        wowElements.forEach(el=>{
+            let rect = el.getBoundingClientRect(), threshold = (el.classList.contains('wow-fade-slow'))? 0.5 : 0.2;
+            if(window.innerHeight > rect.top + rect.height*threshold) el.classList.add('animated');
+        });
+    }
+    showWow();
+    </script>
 </body>
 </html>
