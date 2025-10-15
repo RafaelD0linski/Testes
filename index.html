@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <title>Diogo Yuri Grolli • Portfólio QA</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <button class="theme-toggle" id="themeToggle" title="Alternar tema"></button>
@@ -79,47 +79,14 @@
             <div class="footer-copyright">© 2025 Diogo Yuri Grolli</div>
         </footer>
     </main>
-    <script>
-    // Tema claro/escuro
-    const themeToggle = document.getElementById('themeToggle');
-    function themeSet() {
-        const isLight = localStorage.getItem('siteTheme') === 'light';
-        if(isLight){ document.body.classList.add('theme-light'); themeToggle.textContent="🌚"; }
-        else { document.body.classList.remove('theme-light'); themeToggle.textContent="🌞"; }
-    }
-    themeToggle.onclick = ()=>{
-        if(document.body.classList.contains('theme-light')){
-            localStorage.setItem('siteTheme','dark');
-        }else{
-            localStorage.setItem('siteTheme','light');
-        }
-        themeSet();
-    };
-    themeSet();
-
-    // Typed text
-    const roles = [ 'Analista de QA • Estagiário na Informezz • Unidep', 'Especialista em testes de qualidade', ];
-    let typedIndex = 0, charI = 0, typingDiv = document.getElementById('typedRole');
-    function typeIt() {
-        if (!typingDiv) return;
-        if (charI < roles[typedIndex].length) {
-            typingDiv.innerHTML += roles[typedIndex][charI++];
-            setTimeout(typeIt, 38);
-        } else {
-            setTimeout(()=> { charI = 0; typedIndex = (typedIndex+1)%roles.length; typingDiv.innerHTML = ''; setTimeout(typeIt, 1200); }, 1700);
-        }
-    }
-    typeIt();
-    // Animações on scroll
-    const wowElements = document.querySelectorAll('.wow-fade, .wow-fade-slow, .wow-up');
-    window.addEventListener('scroll', showWow);
-    function showWow() {
-        wowElements.forEach(el=>{
-            let rect = el.getBoundingClientRect(), threshold = (el.classList.contains('wow-fade-slow'))? 0.5 : 0.2;
-            if(window.innerHeight > rect.top + rect.height*threshold) el.classList.add('animated');
-        });
-    }
-    showWow();
-    </script>
+    <!-- MODAL DE EXPLICAÇÃO DETALHADA -->
+    <div class="modal-bg" id="modalDescricao">
+        <div class="modal-box descricao-modal">
+            <button class="modal-close" id="closeDescricao">✕</button>
+            <h2 id="descricaoTitulo"></h2>
+            <div id="descricaoTexto" style="margin-top:18px;font-size:1.10rem;line-height:1.6"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
