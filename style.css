@@ -1,19 +1,19 @@
 body {
     margin: 0;
-    background: #23232b;
+    background: #22232a;
     color: #ededed;
     font-family: 'Inter', 'Playfair Display', serif;
 }
 .hero-bg {
-    background: linear-gradient(125deg, #23232b 66%, #2a2a37 100%);
-    min-height: 56vh;
+    background: linear-gradient(120deg, #22232a 60%, #23232b 100%);
+    min-height: 62vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    border-bottom-right-radius: 42px;
-    border-bottom-left-radius: 42px;
-    box-shadow: 0 12px 32px #1b1b2a36;
+    border-bottom-right-radius: 38px;
+    border-bottom-left-radius: 38px;
+    box-shadow: 0 8px 32px #18192425;
 }
 .hero-content {
     text-align: center;
@@ -56,15 +56,15 @@ body {
     margin-top: 15px;
 }
 .hero-menu a {
-    color: #fdfdfd;
-    font-size: 1.08rem;
-    margin: 0 14px;
+    color: #badcff;
+    font-size: 1.11rem;
+    margin: 0 15px;
     font-weight: 600;
     letter-spacing: .02em;
     text-decoration: none;
-    transition: color .19s;
-    padding-bottom: 2px;
     border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+    transition: color .18s, border-color .18s;
 }
 .hero-menu a:hover {
     color: #92b4fe;
@@ -202,7 +202,6 @@ footer {
     margin-top: 31px;
     padding-bottom: 15px;
 }
-/* Responsividade */
 @media (max-width:900px) {
     .section {max-width:99vw;}
     .cards-row {gap:15px;}
