@@ -4,101 +4,119 @@
     <meta charset="UTF-8" />
     <title>Diogo Yuri Grolli • Portfólio QA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <img src="image.jpg" alt="Perfil de Diogo" class="avatar">
-            <div class="header-info">
-                <h1>Diogo Yuri Grolli</h1>
-                <span class="role"><img src="https://img.icons8.com/ios-filled/18/92b4fe/business.png" /> Quality Assurance | Unidep</span>
-                <span class="location"><img src="https://img.icons8.com/ios-filled/16/92b4fe/marker.png" /> Pato Branco, PR</span>
-            </div>
-        </header>
-        <nav class="menu">
-            <a href="#about">Sobre</a>
-            <a href="#projects">Projetos</a>
-            <a href="#career">Trajetória</a>
-            <a href="#contact">Contato</a>
-        </nav>
-        <hr>
-        <section class="about-section" id="about">
-            <h2>Sobre Mim</h2>
-            <div class="about-columns">
-                <div class="about-main">
-                    <ul>
-                        <li>Estudante de ADS na Unidep (4º/5º período)</li>
-                        <li>Foco em garantia de qualidade, testes funcionais, métodos ágeis</li>
-                        <li>Paixão por evolução técnica e impacto sistêmico</li>
-                        <li>Visão colaborativa e orientada ao usuário</li>
-                    </ul>
-                </div>
-                <div class="skills-icons">
-                    <div>
-                        <img src="https://img.icons8.com/color/36/000000/test-passed.png" />Funcional
-                    </div>
-                    <div>
-                        <img src="https://img.icons8.com/color/36/000000/curly-brackets.png" />BDD
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="projects-section" id="projects">
-            <h2>Destaques Técnicos</h2>
-            <div class="grid-projects">
-                <div class="project">
-                    <span class="pj-title">RN-0133</span>
-                    <span>Validação de Duplicidade - Agrupamento de Marcas</span>
-                    <p>Evita duplicidades, garante integridade; <b>análise de cenários</b>, tabelas de decisão.</p>
-                </div>
-                <div class="project">
-                    <span class="pj-title">RN-0106</span>
-                    <span>Hierarquia de Permissões - Descontos</span>
-                    <p>Controle granular, múltiplos níveis e liberação por gerente; <b>testes de segurança</b>.</p>
-                </div>
-                <div class="project">
-                    <span class="pj-title">RN-0111</span>
-                    <span>Lógica de Desconto Acumulativo</span>
-                    <p>Descontos integrados entre convênio e promoção; <b>5 cenários em decisão</b>.</p>
-                </div>
-                <div class="project">
-                    <span class="pj-title">RN-0092</span>
-                    <span>Controle de Acesso a Convênios</span>
-                    <p>Permissões cruzadas conforme loja/perfil; <b>segurança por contexto</b>.</p>
-                </div>
-                <div class="project">
-                    <span class="pj-title">RN-0223</span>
-                    <span>Não-Retroatividade em Convênios</span>
-                    <p>Protege registros históricos após alterações; <b>dados íntegros</b>.</p>
-                </div>
-            </div>
-        </section>
-        <section class="career-section" id="career">
-            <h2>Trajetória</h2>
-            <div class="timeline">
-                <div class="timeline-row">
-                    <span class="timeline-date">2024 - Atual</span>
-                    <span class="timeline-job">QA Jr. <b>Informezz</b></span>
-                </div>
-                <div class="timeline-row">
-                    <span class="timeline-date">2023</span>
-                    <span class="timeline-job">Estagiário QA <b>Projeto Acadêmico</b></span>
-                </div>
-            </div>
-        </section>
-        <section class="contact-section" id="contact">
-            <h2>Contato</h2>
-            <div class="contact-block">
-                <a href="mailto:diogoyurigrolli@gmail.com"><img src="https://img.icons8.com/ios-filled/20/92b4fe/new-post.png" />Email</a>
-                <a href="https://www.linkedin.com/in/diogo-yuri-grolli-1753ab305/" target="_blank"><img src="https://img.icons8.com/ios-filled/20/92b4fe/linkedin-circled.png" />LinkedIn</a>
-            </div>
-        </section>
-        <footer class="footer">
-            <div class="footer-copyright">© 2025 Diogo Yuri Grolli</div>
-        </footer>
+    <div class="hero-bg">
+        <div class="hero-content">
+            <img src="image.jpg" class="avatar-hero" alt="Perfil de Diogo">
+            <h1 class="hero-title">Diogo Yuri Grolli</h1>
+            <span class="hero-role">Analista de QA • Estagiário na Informezz • Unidep</span>
+            <span class="hero-location"><img src="https://img.icons8.com/ios-filled/16/92b4fe/marker.png"/> Pato Branco, PR</span>
+            <nav class="hero-menu">
+                <a href="#resumo">Resumo</a>
+                <a href="#competencias">Competências</a>
+                <a href="#projects">Projetos</a>
+                <a href="#career">Trajetória</a>
+                <a href="#contact">Contato</a>
+            </nav>
+        </div>
     </div>
-    <script src="script.js"></script>
+    <main>
+        <section id="resumo" class="section bloco-resumo">
+            <h2 class="section-title">Resumo Profissional</h2>
+            <p class="card-resumo">
+                Analista de QA com foco na análise aprofundada de Regras de Negócio (RNs) e na criação de toda a suíte de documentação de testes. Habilidade comprovada em transformar requisitos complexos em artefatos claros e rastreáveis, como Histórias de Usuário, Critérios de Aceite, Tabelas de Decisão e Casos de Teste detalhados. Perfil altamente analítico, detalhista e colaborativo, acostumado a garantir a qualidade desde a concepção do produto.
+            </p>
+        </section>
+        <section id="competencias" class="section bloco-competencias">
+            <h2 class="section-title">Principais Competências</h2>
+            <div class="cards-row compet-row">
+                <div class="card">
+                    <h3>Análise de Requisitos e RNs</h3>
+                    <p>Interpretação, questionamento e validação da lógica de negócio para garantir testes completos.</p>
+                </div>
+                <div class="card">
+                    <h3>Histórias de Usuário</h3>
+                    <p>Transformação de regras técnicas em valor para o negócio, explorando diferentes personas.</p>
+                </div>
+                <div class="card">
+                    <h3>Tabelas de Decisão</h3>
+                    <p>Mapeamento de regras complexas em cenários claros e lógicos.</p>
+                </div>
+                <div class="card">
+                    <h3>Casos de Teste Detalhados</h3>
+                    <p>CTs completos (pré-condições, passos, esperado), cobrindo sucesso e falha.</p>
+                </div>
+                <div class="card">
+                    <h3>Testes Exploratórios</h3>
+                    <p>Criação de "Cartas de Teste" guiando objetivos claros para testes não roteirizados.</p>
+                </div>
+                <div class="card">
+                    <h3>Pensamento Crítico</h3>
+                    <p>Atenção aos detalhes, identificação de ambiguidades e inconsistências.</p>
+                </div>
+                <div class="card">
+                    <h3>Colaboração Ágil</h3>
+                    <p>Refinamento de requisitos com PO, trabalho em times ágeis.</p>
+                </div>
+                <div class="card">
+                    <h3>Ferramentas</h3>
+                    <p>Análise de interfaces (Figma), familiaridade com ERPs.</p>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="section projects-section">
+            <h2 class="section-title">Projetos Técnicos</h2>
+            <div class="cards-row">
+                <div class="project-card">
+                    <h3>RN-0133</h3>
+                    <p>Validação de Duplicidade, integridade via cenários/tabelas de decisão.</p>
+                </div>
+                <div class="project-card">
+                    <h3>RN-0106</h3>
+                    <p>Hierarquia de Permissões: controle granular, testes de segurança.</p>
+                </div>
+                <div class="project-card">
+                    <h3>RN-0111</h3>
+                    <p>Desconto Acumulativo: integração convênio/promos, múltiplos cenários.</p>
+                </div>
+                <div class="project-card">
+                    <h3>RN-0092</h3>
+                    <p>Acesso a Convênios: permissões cruzadas, segurança por contexto.</p>
+                </div>
+                <div class="project-card">
+                    <h3>RN-0223</h3>
+                    <p>Não-Retroatividade: proteção de históricos e dados íntegros.</p>
+                </div>
+            </div>
+        </section>
+        <section id="career" class="section career-section">
+            <h2 class="section-title">Trajetória</h2>
+            <div class="career-row">
+                <div>
+                    <span class="career-date">2024 - Atual</span>
+                    <span class="career-job">Estagiário QA - Informezz</span>
+                </div>
+                <div>
+                    <span class="career-date">2023</span>
+                    <span class="career-job">Estagiário QA - Projeto Acadêmico</span>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section contact-section">
+            <h2 class="section-title">Contato</h2>
+            <div class="contact-links">
+                <a href="mailto:diogoyurigrolli@gmail.com"><img src="https://img.icons8.com/ios-filled/24/92b4fe/new-post.png"/> diogoyurigrolli@gmail.com</a>
+                <a href="https://www.linkedin.com/in/diogo-yuri-grolli-1753ab305/" target="_blank"><img src="https://img.icons8.com/ios-filled/24/92b4fe/linkedin-circled.png"/> LinkedIn</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-copyright">
+            © 2025 Diogo Yuri Grolli
+        </div>
+    </footer>
 </body>
 </html>
